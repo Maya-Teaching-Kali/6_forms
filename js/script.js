@@ -7,7 +7,7 @@ first_name_text.addEventListener("change", (event) => {
     first_name = event.target.value
 });
 // make a change event for last name and make the first letter always be uppercase
-//make a keyup for email and check for an @ symbol
+//make a "keyup" for email and check for an @ symbol
 
 checkbox.forEach((element) => {
     element.addEventListener("change", (event) => {
