@@ -1,14 +1,16 @@
 h1 {
   text-align: center;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+}
 form {
   width: 580px;
   margin: 5em auto;
   border: 5px dotted rgb(64, 64, 64);
   padding: 20px;
 }
-
 fieldset:has(input[type="text"]) {
   display: flex;
   flex-direction: column;
@@ -22,7 +24,7 @@ input[type="email"] {
   color: aliceblue;
 }
 input[type="text"]:focus {
-    outline: 2px solid rgb(162, 0, 255);
+  outline: 2px solid rgb(162, 0, 255);
 }
 input[type="email"]:invalid {
   border: 3px solid red;
@@ -61,7 +63,11 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background-color: rgb(0, 0, 0);
 }
-
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hamburger-icon,
 .hamburger-icon::after,
 .hamburger-icon::before {
@@ -70,4 +76,3 @@ input[type="radio"]:checked {
   height: 5px;
   border-radius: 5px;
 }
-

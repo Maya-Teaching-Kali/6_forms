@@ -5,37 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Transform</title>
+    <title>Forms JS</title>
   </head>
-  <body >
+  <body>
     <h1>Contact</h1>
     <form action="./index.html">
       <fieldset>
         <legend>Textbox</legend>
-        <label for="first Name">First Name</label>
-        <input type="text" />
-        <label for="first Name">Last Name</label>
-        <input type="text" />
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" />
       </fieldset>
       <fieldset>
         <legend>Email</legend>
-        <label for="">Email</label>
-        <input type="email" name="" id="" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+      <fieldset class="checkbox">
+        <legend>What Languages Do You Know</legend>
+        <label for="">JavaScript</label>
+        <input
+          type="checkbox"
+          name="programming-languages"
+          value="JavaScript"
+          id="JavaScript"
+        />
+        <label for="">Visual Basic</label>
+        <input
+          type="checkbox"
+          name="programming-languages"
+          value="Visual Basic"
+          id="Visual Basic"
+        />
+        <label for="">SQL</label>
+        <input
+          type="checkbox"
+          name="programming-languages"
+          value="SQL"
+          id="SQL"
+        />
+        <label for="">C#</label>
+        <input
+          type="checkbox"
+          name="programming-languages"
+          value="C#"
+          id="C#"
+        />
       </fieldset>
       <fieldset>
-        <legend>Checkbox</legend>
-        <label for="">Option 1</label>
-        <input type="checkbox" name="" id="" />
-        <label for="">Option 2</label>
-        <input type="checkbox" name="" id="" />
+        <legend>Are You Tall or Short?</legend>
+        <label for="">Tall</label>
+        <input type="radio" name="tall-short" value="tall" id="tall" />
+        <label for="">Short</label>
+        <input type="radio" name="tall-short" value="short" id="short" />
+        <label for="">Medium</label>
+        <input type="radio" name="tall-short" value="medium" id="medium" />
       </fieldset>
-      <fieldset>
-        <legend>Radio Button</legend>
-        <label for="">Yes</label>
-        <input type="radio" name="yes-no" id="" />
-        <label for="">No</label>
-        <input type="radio" name="yes-no" id="" />
-      </fieldset>
+      <div class="center">
+        <button class="center-button" >Submit</button>
+      </div>
     </form>
+    <script src="./js/script.js"></script>
   </body>
 </html>
