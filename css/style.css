@@ -70,12 +70,4 @@ input[type="radio"]:checked {
   height: 5px;
   border-radius: 5px;
 }
-.hamburger-icon::after,
-.hamburger-icon::before {
-  content: "";
-  display: block;
-  transform: translateY(5px);
-}
-.hamburger-icon::before {
-  transform: translateY(-10px);
-}
+
